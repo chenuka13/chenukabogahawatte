@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Rivera | Featured Projects & Work</title>
+    <title>Chenuka Bogahawatte | Featured Projects & Work</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -72,7 +71,7 @@
                 <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-emerald-700 flex items-center justify-center text-black font-bold shadow-md">
                     <i class="fa-solid fa-code text-black text-sm"></i>
                 </div>
-                <span class="font-bold text-base text-white tracking-tight">Alex Rivera <span class="text-xs px-2 py-0.5 rounded bg-brand-500/10 text-brand-400 font-mono border border-brand-500/20">Projects</span></span>
+                <span class="font-bold text-base text-white tracking-tight">Chenuka Bogahawatte <span class="text-xs px-2 py-0.5 rounded bg-brand-500/10 text-brand-400 font-mono border border-brand-500/20">Projects</span></span>
             </div>
             <div class="flex items-center space-x-3">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-[#21262d] hover:bg-[#30363d] text-white px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium border border-[#30363d] transition-colors">
@@ -378,19 +377,6 @@
         document.getElementById('project-search').addEventListener('input', (e) => {
             searchQuery = e.target.value.trim();
             filterAndRender();
-        });
-
-        document.getElementById('copy-readme-btn').addEventListener('click', () => {
-            const markdownCode = `<div align="center">\n  <a href="https://yourusername.github.io">\n    <img src="https://img.shields.io/badge/View-Live_Projects-22c55e?style=for-the-badge&logo=icloud&logoColor=white" alt="Projects Portfolio"/>\n  </a>\n</div>`;
-            document.execCommand('copy');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(markdownCode);
-            }
-            const copyText = document.getElementById('copy-text');
-            copyText.textContent = "Copied Markdown Badge!";
-            setTimeout(() => {
-                copyText.textContent = "Copy README Markdown Badge";
-            }, 2000);
         });
 
         window.onload = function() {
