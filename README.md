@@ -168,14 +168,12 @@
         const projects = [
             {
                 id: 1,
-                title: "OmniRover ROS2 Autonomous AGV",
+                title: "Autonomous Cassava Mosaic Disease detection rover",
                 category: "robotics",
-                summary: "An omni-directional autonomous guided vehicle powered by ROS2 Navigation2, LiDAR, and an NVIDIA Jetson Orin Nano.",
-                description: "OmniRover is an advanced open-source AGV designed for warehouse logistics. It features 3-wheel omni-drive kinematics with custom closed-loop PID motor controllers on an STM32 co-processor, SLAM-toolbox mapping, and real-time obstacle avoidance.",
+                summary: "An autonomous rover built to navigate through a cassava field, identifying and informing the farmer on infected plants",
+                description: "The Automated Cassava Mosaic Disease Detection Rover is an edge-AI agricultural solution designed to empower smallholder farmers through accessible field automation. Developed on a rugged, cost-effective hardware platform, this autonomous rover navigates structured cassava crops, locates individual plants, and captures high-resolution leaf imagery to identify Cassava Mosaic Virus (CMV) infections in real time. By bringing early disease detection directly to resource-constrained environments, the project bridges the gap between complex robotics and practical, low-cost precision agriculture.   
+                At the core of the system is a dual-controller architecture pairing an Arduino Mega 2560 for real-time motor control and multi-sensor navigation with a Raspberry Pi 5 executing deep learning inference on the edge. Using a fine-tuned ResNet-152 CNN trained on over 14,000 leaf samples, the rover achieves an 84% validation accuracy while operating completely offline. Equipped with a custom servo-stabilized camera assembly and a lightweight local web dashboard, the rover provides actionable plant health feedback in under 11 seconds per crop—offering a scalable template for affordable AI in smart farming",
                 image: "https://placehold.co/600x400/161b22/22c55e?text=OmniRover+ROS2",
-                tags: ["ROS2", "C++", "Python", "Gazebo", "STM32"],
-                stars: 184,
-                forks: 42,
                 githubUrl: "https://github.com"
             },
             {
