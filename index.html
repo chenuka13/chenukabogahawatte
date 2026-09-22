@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering & AI Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header>
+    <h1>Engineering & AI Projects</h1>
+    <p class="subtitle">Interactive Showcase of Embedded Systems, Robotics, and Edge AI</p>
+  </header>
+
+  <!-- Dashboard Grid View -->
+  <main id="dashboard-view">
+    <div class="project-grid" id="project-grid"></div>
+  </main>
+
+  <!-- Detailed Project View -->
+  <main id="detail-view" class="hidden">
+    <button class="btn-back" onclick="showDashboard()">← Back to Projects</button>
+    <div class="detail-view">
+      <h2 id="detail-title"></h2>
+      
+      <div class="detail-section">
+        <h3>Overview</h3>
+        <p id="detail-description"></p>
+      </div>
+
+      <div class="detail-section">
+        <h3>Development & Progress</h3>
+        <div class="image-gallery" id="detail-progress-gallery"></div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Results & Performance</h3>
+        <p id="detail-results-text"></p>
+        <div class="image-gallery" id="detail-results-gallery"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/projectsData.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
